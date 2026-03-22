@@ -39,7 +39,7 @@ export default function HomePage() {
               href="tel:+254716884011"
               className="bg-yellow-500 text-black px-4 py-2 md:px-6 md:py-3 rounded-lg font-medium text-sm md:text-base transition hover:bg-yellow-400"
             >
-              Call Now
+              Call Now <span className="font-bold text-2xl">0716 884 011</span>
             </a>
 
             <a
