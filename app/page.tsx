@@ -21,7 +21,7 @@ export default function HomePage() {
 
         <div className="relative z-10 text-center px-6">
           <h1 className="text-3xl md:text-5xl font-bold mb-6">
-            Car Key Replacement in Nairobi – 24/7 Auto Locksmith Services
+            Car Key Replacement in Nairobi – Open 24/7 Auto Locksmith Services
           </h1>
           <p className="text-lg mb-6 max-w-2xl mx-auto">
             We provide professional car key replacement, programming, unlocking,
