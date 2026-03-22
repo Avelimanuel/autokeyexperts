@@ -172,9 +172,14 @@ export default function HomePage() {
     </main>
   );
 }
+interface ServiceCardProps {
+  img: string;
+  title: string;
+  desc: string;
+}
 
 /* REUSABLE CARD */
-function ServiceCard({ img, title, desc }) {
+function ServiceCard({ img, title, desc }: ServiceCardProps) {
   return (
     <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
       <Image
