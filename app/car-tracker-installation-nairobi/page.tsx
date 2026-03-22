@@ -36,7 +36,7 @@ export default function Page() {
       {/* IMAGE + DETAILS */}
       <section className="grid md:grid-cols-2 gap-10 items-center">
         <Image
-          src="/images/car-tracker-installation.jpg"
+          src="/images/gpstracking.jpeg"
           alt="car tracker installation Nairobi"
           width={600}
           height={400}
