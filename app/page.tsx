@@ -13,7 +13,7 @@ export default function HomePage() {
   return (
     <main className="flex flex-col">
       {/* HERO */}
-      <section className="relative pt-16 md:pt-0 h-[90vh] flex items-center justify-center text-white">
+      <section className="relative pt-10 md:pt-0 h-[90vh] flex items-center justify-center text-white">
         <Image
           src="/images/hero.jpg"
           alt="auto locksmith services Nairobi"
@@ -22,7 +22,7 @@ export default function HomePage() {
         />
         <div className="absolute inset-0 bg-black/60" />
 
-        <div className="relative z-10 text-center px-6">
+        <div className="relative z-10 text-center px-3">
           <HeroAnimated>
             <h1 className="text-3xl md:text-5xl font-bold mb-6">
               Car Key Replacement in Nairobi – Open 24/7 Auto Locksmith Services
