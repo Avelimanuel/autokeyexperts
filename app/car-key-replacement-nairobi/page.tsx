@@ -1,4 +1,3 @@
-
 import Image from "next/image";
 
 export const metadata = {
@@ -22,7 +21,7 @@ export default function CarKeyReplacementPage() {
       {/* HERO */}
       <section className="relative pt-16 md:pt-0 h-[70vh] flex items-center justify-center text-white">
         <Image
-          src="/images/car-key-replacement.jpg"
+          src="/images/"
           alt="car key replacement Nairobi"
           fill
           className="object-cover"
@@ -75,7 +74,7 @@ export default function CarKeyReplacementPage() {
       {/* IMAGE + DETAILS */}
       <section className="py-10 px-6 md:px-20 grid md:grid-cols-2 gap-10 items-center">
         <Image
-          src="/images/key-cutting.jpg"
+          src="/images/cx5lostkey.jpeg"
           alt="car key cutting Nairobi"
           width={600}
           height={400}

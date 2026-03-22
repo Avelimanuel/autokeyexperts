@@ -124,7 +124,7 @@ export default function HomePage() {
           />
 
           <ServiceCardAnimated
-            img="/images/key-cutting.jpg"
+            img="/images/keycutting.jpeg"
             title="Car Key Cutting"
             desc="We offer precise car key cutting services for all vehicle types using advanced machines. Whether you need a replacement or spare key, we ensure accurate cutting for perfect fit and function."
           />
