@@ -28,18 +28,19 @@ export default function HomePage() {
               Car Key Replacement in Nairobi – Open 24/7 Auto Locksmith Services
             </h1>
             <p className="text-lg mb-6 max-w-2xl mx-auto">
-              We provide professional car key replacement, programming,
-              unlocking, ECU repair, and car security solutions anywhere in
-              Nairobi.
+              We provide professional lost car key replacement,spare key
+              programming, car door unlocking, ECU repair, and car security
+              solutions anywhere in Nairobi.
             </p>
           </HeroAnimated>
 
           <div className="flex flex-col sm:flex-row justify-center gap-3">
             <a
               href="tel:+254716884011"
-              className="bg-yellow-500 text-black px-4 py-2 md:px-6 md:py-3 rounded-lg font-medium text-sm md:text-base transition hover:bg-yellow-400"
+              className="bg-yellow-500 text-black px-4 py-2 md:px-4 md:py-3 rounded-lg font-medium text-sm md:text-base transition hover:bg-yellow-400"
             >
-              Call Now <span className="font-bold text-2xl">0716 884 011</span>
+              <span className="font-bold text-xl">Call - </span>{" "}
+              <span className="font-bold text-xl">0716 884 011</span>
             </a>
 
             <a
