@@ -1,4 +1,7 @@
 import Image from "next/image";
+import HeroAnimated from "./components/animations/HeroAnimated";
+import FadeUp from "./components/animations/FadeUp";
+import ServiceCardAnimatedAnimated from "./components/animations/ServiceCardanimated";
 
 export const metadata = {
   title: "Car Key Replacement Nairobi | Auto Locksmith Kenya | AutoKeysExperts",
@@ -20,13 +23,16 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-black/60" />
 
         <div className="relative z-10 text-center px-6">
-          <h1 className="text-3xl md:text-5xl font-bold mb-6">
-            Car Key Replacement in Nairobi – Open 24/7 Auto Locksmith Services
-          </h1>
-          <p className="text-lg mb-6 max-w-2xl mx-auto">
-            We provide professional car key replacement, programming, unlocking,
-            ECU repair, and car security solutions anywhere in Nairobi.
-          </p>
+          <HeroAnimated>
+            <h1 className="text-3xl md:text-5xl font-bold mb-6">
+              Car Key Replacement in Nairobi – Open 24/7 Auto Locksmith Services
+            </h1>
+            <p className="text-lg mb-6 max-w-2xl mx-auto">
+              We provide professional car key replacement, programming,
+              unlocking, ECU repair, and car security solutions anywhere in
+              Nairobi.
+            </p>
+          </HeroAnimated>
 
           <div className="flex flex-col sm:flex-row justify-center gap-3">
             <a
@@ -50,84 +56,86 @@ export default function HomePage() {
 
       {/* SERVICES */}
       <section className="py-16 px-6 md:px-20 bg-gray-100 space-y-12">
-        <h2 className="text-3xl font-bold text-center">
-          Our Auto Locksmith & Car Tech Services
-        </h2>
+        <FadeUp>
+          <h2 className="text-3xl font-bold text-center">
+            Our Auto Locksmith & Car Tech Services
+          </h2>
+        </FadeUp>
 
         <div className="grid md:grid-cols-2 gap-10">
-          <ServiceCard
+          <ServiceCardAnimatedAnimated
             img="/images/landcruiserlostkey.jpeg"
             title="Lost Car Key Replacement"
             desc="Lost all your car keys? Don’t worry. We provide complete car key replacement services in Nairobi for all vehicle models. Our mobile auto locksmith team comes to your location, cuts a new key, and programs it on-site so your car can start immediately. Fast, reliable, and available 24/7."
           />
 
-          <ServiceCard
+          <ServiceCardAnimatedAnimated
             img="/images/corollacross.jpeg"
             title="Spare Key Duplication"
             desc="Avoid getting stranded by having a spare car key made in advance. We duplicate and program all types of car keys including transponder keys, remote keys, and smart keys. Our service is quick, affordable, and ensures your spare key works perfectly with your vehicle."
           />
 
-          <ServiceCard
+          <ServiceCardAnimatedAnimated
             img="/images/lockedoutofcar.webp"
             title="Car Door Unlocking"
             desc="Locked your keys inside the car? Our emergency car unlocking service in Nairobi is fast and damage-free. We use professional tools to safely unlock your vehicle without damaging the locks or doors. Available 24/7 for all car models."
           />
 
-          <ServiceCard
+          <ServiceCardAnimated
             img="/images/mazdacx5spare.jpeg"
             title="Car Key Programming"
             desc="We specialize in car key programming for a wide range of vehicles. Whether you need a new key programmed or an existing key reprogrammed, we use advanced diagnostic tools to ensure proper synchronization with your car’s security system."
           />
 
-          <ServiceCard
+          <ServiceCardAnimated
             img="/images/gpstracking.jpeg"
             title="GPS Tracking Installation"
             desc="Secure your vehicle with professional GPS tracking installation services in Nairobi. Monitor your car’s location in real-time, prevent theft, and improve security. We install reliable tracking systems with user-friendly mobile access."
           />
 
-          <ServiceCard
+          <ServiceCardAnimated
             img="/images/remoterepair.webp"
             title="Car Remote Repair"
             desc="If your car remote is not working properly, we provide expert repair and replacement services. From button issues to signal problems, we diagnose and fix faults quickly so your remote functions like new."
           />
 
-          <ServiceCard
+          <ServiceCardAnimated
             img="/images/alarm.jpg"
             title="Car Alarm Installation"
             desc="Protect your vehicle from theft with high-quality car alarm systems. We supply and install advanced car alarms with features like remote control, immobilizer systems, and siren alerts for maximum security."
           />
 
-          <ServiceCard
+          <ServiceCardAnimated
             img="/images/dashcam.jpeg"
             title="Dashboard Camera Installation"
             desc="Install a dashboard camera to record your driving and enhance your vehicle’s security. We provide professional dashcam installation with clean wiring and proper setup for clear recording and reliability."
           />
 
-          <ServiceCard
+          <ServiceCardAnimated
             img="/images/airbagmodulereset.jpeg"
             title="SRS Airbag Module Repair & Crash Data Reset"
             desc="If your vehicle has been involved in an accident, the SRS (airbag) module often stores crash data that prevents the airbag system from functioning properly. Instead of replacing the entire module, we offer professional SRS module repair and crash data reset services. We safely clear the stored crash data and restore the system to proper working condition, saving you the high cost of replacement while ensuring your vehicle’s safety systems are fully operational."
           />
 
-          <ServiceCard
+          <ServiceCardAnimated
             img="/images/ecurepair.jpeg"
             title="ECU Repair & Programming"
             desc="We diagnose and repair car computer (ECU) issues affecting your vehicle’s performance. Our ECU programming services help fix errors, improve efficiency, and restore proper engine functionality."
           />
 
-          <ServiceCard
+          <ServiceCardAnimated
             img="/images/key-cutting.jpg"
             title="Car Key Cutting"
             desc="We offer precise car key cutting services for all vehicle types using advanced machines. Whether you need a replacement or spare key, we ensure accurate cutting for perfect fit and function."
           />
 
-          <ServiceCard
+          <ServiceCardAnimated
             img="/images/lock.jpg"
             title="Ignition & Door Lock Repair"
             desc="Having trouble with your ignition or door locks? We repair worn-out or damaged locks to restore smooth operation. Our service helps prevent key breakage and ensures your vehicle remains secure."
           />
 
-          <ServiceCard
+          <ServiceCardAnimated
             img="/images/keyshell.jpeg"
             title="Broken Key Shell Replacement"
             desc="If your car key shell is broken or worn out, we replace it with a new durable shell. This restores the appearance and usability of your key without affecting the internal electronics."
@@ -137,7 +145,9 @@ export default function HomePage() {
 
       {/* WHY US */}
       <section className="py-16 px-6 md:px-20 bg-black text-white text-center space-y-6">
-        <h2 className="text-3xl font-bold">Why Choose AutoKeysExperts?</h2>
+        <FadeUp>
+          <h2 className="text-3xl font-bold">Why Choose AutoKeysExperts?</h2>
+        </FadeUp>
 
         <p className="max-w-2xl mx-auto">
           We are trusted professionals offering fast, affordable, and reliable
@@ -172,14 +182,14 @@ export default function HomePage() {
     </main>
   );
 }
-interface ServiceCardProps {
+interface ServiceCardAnimatedProps {
   img: string;
   title: string;
   desc: string;
 }
 
 /* REUSABLE CARD */
-function ServiceCard({ img, title, desc }: ServiceCardProps) {
+function ServiceCardAnimated({ img, title, desc }: ServiceCardAnimatedProps) {
   return (
     <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
       <Image
