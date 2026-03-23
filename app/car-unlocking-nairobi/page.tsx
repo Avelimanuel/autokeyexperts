@@ -61,9 +61,27 @@ export default function Page() {
         </p>
         <p>
           Our mobile service covers all areas in Nairobi, including Westlands,
-          Kilimani, Embakasi, Karen, Muthaiga, Kiambu, Kileleshwa and surrounding neighborhoods. We are available
-          24/7 for all car models.
+          Kilimani, Embakasi, Karen, Muthaiga, Kiambu, Kileleshwa and
+          surrounding neighborhoods. We are available 24/7 for all car models.
         </p>
+        <section className="px-6 md:px-20 py-16">
+         
+
+          <div className="relative w-full h-80 rounded-xl overflow-hidden shadow-lg">
+            <Image
+              src="/images/lockedoutofcar.webp"
+              alt="Professional car unlocking service"
+              fill
+              className="object-cover"
+            />
+          </div>
+
+          <p className="mt-4 text-gray-700">
+            Our experienced technicians are equipped with specialized tools to
+            safely unlock your car without causing damage. Available 24/7 across
+            Nairobi, we ensure fast and reliable service for all car models.
+          </p>
+        </section>
 
         <h2 className="text-3xl font-bold">
           Why Choose AutoKeysExperts Kenya?
