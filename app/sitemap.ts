@@ -1,8 +1,27 @@
 export default function sitemap() {
+  const lastModified = new Date();
+
   return [
     {
       url: "https://autokeyexperts.co.ke",
-      lastModified: new Date(),
+      lastModified,
+    },
+
+    {
+      url: "https://www.autokeyexperts.co.ke/car-key-replacement-nairobi",
+      lastModified,
+    },
+    {
+      url: "https://www.autokeyexperts.co.ke/car-unlocking-nairobi",
+      lastModified,
+    },
+    {
+      url: "https://www.autokeyexperts.co.ke/car-alarm-installation-nairobi",
+      lastModified,
+    },
+    {
+      url: "https://www.autokeyexperts.co.ke/car-tracker-installation-nairobi",
+      lastModified,
     },
   ];
 }
