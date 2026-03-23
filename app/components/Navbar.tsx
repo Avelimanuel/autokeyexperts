@@ -24,6 +24,7 @@ export default function Navbar() {
             {[
               { name: "Home", href: "/" },
               { name: "Key Replacement", href: "/car-key-replacement-nairobi" },
+              { name: "Spare car key", href: "/spare-car-key-nairobi" },
               { name: "Car Unlocking", href: "/car-unlocking-nairobi" },
               { name: "Car Alarms", href: "/car-alarm-installation-nairobi" },
               {

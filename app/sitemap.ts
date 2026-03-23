@@ -19,5 +19,9 @@ export default function sitemap() {
       url: "https://www.autokeyexperts.co.ke/car-tracker-installation-nairobi",
       lastModified,
     },
+    {
+      url: "https://www.autokeyexperts.co.ke/spare-car-key-nairobi",
+      lastModified,
+    },
   ];
 }
