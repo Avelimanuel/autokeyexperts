@@ -2,11 +2,7 @@ export default function sitemap() {
   const lastModified = new Date();
 
   return [
-    {
-      url: "https://autokeyexperts.co.ke",
-      lastModified,
-    },
-
+    { url: "https://www.autokeyexperts.co.ke", lastModified },
     {
       url: "https://www.autokeyexperts.co.ke/car-key-replacement-nairobi",
       lastModified,
