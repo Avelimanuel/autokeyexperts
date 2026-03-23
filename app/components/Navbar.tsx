@@ -1,7 +1,10 @@
 "use client";
 import Link from "next/link";
+import { useState } from "react";
 
 export default function Navbar() {
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+
   return (
     <nav className="fixed w-full z-50 backdrop-blur-md bg-gradient-to-r from-slate-900/90 via-gray-900/90 to-slate-900/90 shadow-lg border-b border-gray-800">
       <div className="max-w-7xl mx-auto px-4 md:px-20">
@@ -17,6 +20,7 @@ export default function Navbar() {
 
           {/* Links */}
           <div className="flex flex-wrap justify-center md:justify-end items-center gap-4 md:gap-8 w-full md:w-auto text-sm md:text-base">
+            {/* Regular Links */}
             {[
               { name: "Home", href: "/" },
               { name: "Key Replacement", href: "/car-key-replacement-nairobi" },
@@ -38,13 +42,20 @@ export default function Navbar() {
             ))}
 
             {/* Dropdown */}
-            <div className="relative group">
-              <span className="cursor-pointer text-gray-300 font-medium hover:text-white transition flex items-center gap-1">
+            <div className="relative">
+              <button
+                onClick={() => setDropdownOpen(!dropdownOpen)}
+                className="flex items-center gap-1 text-gray-300 font-medium hover:text-white transition"
+              >
                 More Services ▼
-              </span>
+              </button>
 
               {/* Dropdown Menu */}
-              <div className="absolute right-0 mt-3 w-64 bg-gray-900 border border-gray-800 rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 backdrop-blur-md">
+              <div
+                className={`absolute right-0 mt-3 w-64 bg-gray-900 border border-gray-800 rounded-xl shadow-xl transition-all duration-300 backdrop-blur-md ${
+                  dropdownOpen ? "block opacity-100" : "hidden opacity-0"
+                }`}
+              >
                 {[
                   {
                     name: "Airbag Module Reset",
@@ -67,6 +78,7 @@ export default function Navbar() {
                     key={item.name}
                     href={item.href}
                     className="block px-4 py-3 text-gray-300 hover:text-white hover:bg-gray-800 transition rounded-lg"
+                    onClick={() => setDropdownOpen(false)} // closes menu after click
                   >
                     {item.name}
                   </Link>

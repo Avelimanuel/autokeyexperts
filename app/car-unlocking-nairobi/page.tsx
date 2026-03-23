@@ -21,7 +21,7 @@ export default function Page() {
 
         <div className="relative z-10 text-center px-6">
           <h1 className="text-3xl md:text-5xl font-bold mb-6">
-            Car Unlocking Service in Nairobi – Fast & Damage-Free
+            Car door Unlocking Service in Nairobi – Fast & Damage-Free
           </h1>
           <p className="text-lg max-w-2xl mx-auto mb-6">
             Locked out of your car? Our professional auto locksmith team
