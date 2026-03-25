@@ -23,5 +23,9 @@ export default function sitemap() {
       url: "https://www.autokeyexperts.co.ke/spare-car-key-nairobi",
       lastModified,
     },
+    {
+      url: "https://www.autokeyexperts.co.ke/broken-car-key-replacement-nairobi",
+      lastModified,
+    },
   ];
 }
