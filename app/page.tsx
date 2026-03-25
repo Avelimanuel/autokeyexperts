@@ -1,82 +1,108 @@
 import Image from "next/image";
 import HeroAnimated from "./components/animations/HeroAnimated";
 import FadeUp from "./components/animations/FadeUp";
-import ServiceCardAnimatedAnimated from "./components/animations/ServiceCardanimated";
+import ServiceCardAnimated from "./components/animations/ServiceCardanimated";
 
 export const metadata = {
-  title: "Car Key Replacement Nairobi | Auto Locksmith Kenya | AutoKeysExperts",
+  title:
+    "Car Key Replacement Nairobi | 24/7 Auto Locksmith Kenya | AutoKeysExperts",
   description:
-    "AutoKeysExperts offers car key replacement, programming, car alarms, ECU repair, GPS tracking, dashboard cameras, and auto locksmith services in Nairobi. 24/7 mobile service.",
+    "AutoKeysExperts offers car key replacement, key programming, car unlocking, ECU repair, GPS tracking, and car security services in Nairobi. 24/7 mobile auto locksmith near you.",
+  keywords: [
+    "car key replacement Nairobi",
+    "auto locksmith Nairobi",
+    "lost car key Nairobi",
+    "car key programming Kenya",
+    "car unlocking Nairobi",
+  ],
+  openGraph: {
+    title: "Auto Locksmith Nairobi | Car Key Replacement 24/7",
+    description:
+      "Professional auto locksmith services in Nairobi. Fast mobile service for lost car keys, programming, unlocking & more.",
+    url: "https://autokeyexperts.co.ke",
+    siteName: "AutoKeysExperts",
+    locale: "en_KE",
+    type: "website",
+  },
 };
 
 export default function HomePage() {
   return (
     <main className="flex flex-col">
       {/* HERO */}
-      <section className="relative pt-10 md:pt-0 h-[90vh] flex items-center justify-center text-white">
+      <section className="relative h-[90vh] flex items-center">
         <Image
           src="/images/hero.jpg"
-          alt="auto locksmith services Nairobi"
+          alt="auto locksmith Nairobi car key replacement services Kenya"
           fill
+          priority
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-black/60" />
 
-        <div className="relative z-10 text-center px-3">
+        {/* Better overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/70 to-black/60" />
+
+        <div className="relative z-10 px-6 md:px-20 max-w-6xl text-white">
           <HeroAnimated>
-            <h1 className="text-3xl md:text-5xl font-bold mb-6">
-              Car Key Replacement in Nairobi – Open 24/7 Auto Locksmith Services
+            <h1 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">
+              Car Key Replacement in Nairobi – 24/7 Auto Locksmith Services
             </h1>
-            <p className="text-lg mb-6 max-w-2xl mx-auto">
-              We provide professional lost car key replacement,spare key
-              programming, car door unlocking, ECU repair, and car security
+
+            <p className="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl">
+              We provide professional lost car key replacement, spare key
+              programming, car door unlocking, ECU repair, and vehicle security
               solutions anywhere in Nairobi.
             </p>
           </HeroAnimated>
 
-          <div className="flex flex-col sm:flex-row justify-center gap-3">
+          {/* CTA */}
+          <div className="flex flex-wrap gap-4">
             <a
               href="tel:+254716884011"
-              className="bg-yellow-500 text-black px-4 py-2 md:px-4 md:py-3 rounded-lg font-medium text-sm md:text-base transition hover:bg-yellow-400"
+              className="bg-yellow-500 text-black px-6 py-3 rounded-xl font-semibold hover:bg-yellow-400 transition shadow-lg"
             >
-              <span className="font-bold text-xl">Call - </span>{" "}
-              <span className="font-bold text-xl">0716 884 011</span>
+              📞 Call - 0716 884 011
             </a>
 
             <a
               href="https://wa.me/254716884011"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-green-500 text-white px-4 py-2 md:px-6 md:py-3 rounded-lg font-medium text-sm md:text-base transition hover:bg-green-400"
+              className="bg-green-500 text-white px-6 py-3 rounded-xl font-semibold hover:bg-green-400 transition shadow-lg"
             >
-              WhatsApp
+              💬 WhatsApp
             </a>
           </div>
+
+          {/* trust line */}
+          <p className="mt-6 text-sm text-gray-300">
+            ✔ Fast Response • ✔ Mobile Service • ✔ All Car Models
+          </p>
         </div>
       </section>
 
       {/* SERVICES */}
-      <section className="py-16 px-6 md:px-20 bg-gray-100 space-y-12">
+      <section className="py-20 px-6 md:px-20 bg-gray-50 space-y-14">
         <FadeUp>
-          <h2 className="text-3xl font-bold text-center">
-            Our Auto Locksmith & Car Tech Services
+          <h2 className="text-3xl md:text-4xl font-bold text-center">
+            Auto Locksmith & Car Tech Services in Nairobi
           </h2>
         </FadeUp>
 
-        <div className="grid md:grid-cols-2 gap-10">
-          <ServiceCardAnimatedAnimated
+        <div className="grid md:grid-cols-2 gap-10 max-w-6xl mx-auto">
+          <ServiceCardAnimated
             img="/images/landcruiserlostkey.jpeg"
             title="Lost Car Key Replacement"
-            desc="Lost all your car keys? Don’t worry. We provide complete car key replacement services in Nairobi for all vehicle models. Our mobile auto locksmith team comes to your location, cuts a new key, and programs it on-site so your car can start immediately. Fast, reliable, and available 24/7."
+            desc="Lost all your car keys in Nairobi? We provide complete car key replacement for all vehicle models. Our mobile auto locksmith comes to your location, cuts a new key, and programs it to your car’s immobilizer system on-site. No towing required. Fast, reliable, and available 24/7 across Nairobi."
           />
 
-          <ServiceCardAnimatedAnimated
+          <ServiceCardAnimated
             img="/images/corollacross.jpeg"
             title="Spare Key Duplication"
             desc="Avoid getting stranded by having a spare car key made in advance. We duplicate and program all types of car keys including transponder keys, remote keys, and smart keys. Our service is quick, affordable, and ensures your spare key works perfectly with your vehicle."
           />
 
-          <ServiceCardAnimatedAnimated
+          <ServiceCardAnimated
             img="/images/lockedoutofcar.webp"
             title="Car Door Unlocking"
             desc="Locked your keys inside the car? Our emergency car unlocking service in Nairobi is fast and damage-free. We use professional tools to safely unlock your vehicle without damaging the locks or doors. Available 24/7 for all car models."
@@ -91,119 +117,118 @@ export default function HomePage() {
           <ServiceCardAnimated
             img="/images/gpstracking.jpeg"
             title="GPS Tracking Installation"
-            desc="Secure your vehicle with professional GPS tracking installation services in Nairobi. Monitor your car’s location in real-time, prevent theft, and improve security. We install reliable tracking systems with user-friendly mobile access."
+            desc="Secure your vehicle with professional GPS tracking installation services in Nairobi. Monitor your car’s location in real-time, prevent theft, and improve security."
           />
 
           <ServiceCardAnimated
             img="/images/remoterepair.webp"
             title="Car Remote Repair"
-            desc="If your car remote is not working properly, we provide expert repair and replacement services. From button issues to signal problems, we diagnose and fix faults quickly so your remote functions like new."
+            desc="Is your car remote not working properly? We diagnose and repair remote key issues including faulty buttons, weak signals, and internal damage. Our technicians restore full functionality or replace the remote if needed."
           />
 
           <ServiceCardAnimated
             img="/images/alarm.jpg"
             title="Car Alarm Installation"
-            desc="Protect your vehicle from theft with high-quality car alarm systems. We supply and install advanced car alarms with features like remote control, immobilizer systems, and siren alerts for maximum security."
+            desc="Enhance your car’s security with professional car alarm installation in Nairobi. We install advanced alarm systems with features like remote control, immobilizers, and siren alerts to protect your vehicle from theft."
           />
 
           <ServiceCardAnimated
             img="/images/dashcam.jpeg"
             title="Dashboard Camera Installation"
-            desc="Install a dashboard camera to record your driving and enhance your vehicle’s security. We provide professional dashcam installation with clean wiring and proper setup for clear recording and reliability."
+            desc="Install a high-quality dashboard camera for security and driving evidence. We provide professional dashcam installation in Nairobi with clean wiring and proper positioning to ensure clear recording and reliable performance."
           />
 
           <ServiceCardAnimated
             img="/images/airbagmodulereset.jpeg"
             title="SRS Airbag Module Repair & Crash Data Reset"
-            desc="If your vehicle has been involved in an accident, the SRS (airbag) module often stores crash data that prevents the airbag system from functioning properly. Instead of replacing the entire module, we offer professional SRS module repair and crash data reset services. We safely clear the stored crash data and restore the system to proper working condition, saving you the high cost of replacement while ensuring your vehicle’s safety systems are fully operational."
+            desc="After an accident, your car’s SRS airbag module may store crash data that prevents proper operation. We offer SRS module repair and crash data reset services in Nairobi, restoring the system without the need for expensive replacement."
           />
 
           <ServiceCardAnimated
             img="/images/ecurepair.jpeg"
             title="ECU Repair & Programming"
-            desc="We diagnose and repair car computer (ECU) issues affecting your vehicle’s performance. Our ECU programming services help fix errors, improve efficiency, and restore proper engine functionality."
+            desc="We diagnose and repair ECU issues, improving performance and restoring functionality."
           />
 
           <ServiceCardAnimated
             img="/images/keycutting.jpeg"
             title="Car Key Cutting"
-            desc="We offer precise car key cutting services for all vehicle types using advanced machines. Whether you need a replacement or spare key, we ensure accurate cutting for perfect fit and function."
+            desc="We provide precise car key cutting services in Nairobi for all vehicle types. Using advanced key cutting machines, we ensure accurate duplication for smooth operation and perfect fit every time."
           />
 
           <ServiceCardAnimated
-            img="/images/lock.jpg"
+            img="/images/ignitionlockrepair.jpeg"
             title="Ignition & Door Lock Repair"
-            desc="Having trouble with your ignition or door locks? We repair worn-out or damaged locks to restore smooth operation. Our service helps prevent key breakage and ensures your vehicle remains secure."
+            desc="Having issues with your ignition or door locks? We repair worn-out or damaged locks to restore smooth operation. Our locksmith services help prevent key breakage and improve your vehicle’s security."
           />
 
           <ServiceCardAnimated
             img="/images/keyshell.jpeg"
             title="Broken Key Shell Replacement"
-            desc="If your car key shell is broken or worn out, we replace it with a new durable shell. This restores the appearance and usability of your key without affecting the internal electronics."
+            desc="If your car key shell is cracked or worn out, we replace it with a durable new casing. We transfer the internal electronics safely, restoring your key’s functionality and appearance without needing a full replacement."
           />
         </div>
       </section>
 
       {/* WHY US */}
-      <section className="py-16 px-6 md:px-20 bg-black text-white text-center space-y-6">
+      <section className="py-20 px-6 md:px-20 bg-black text-white text-center space-y-8">
         <FadeUp>
-          <h2 className="text-3xl font-bold">Why Choose AutoKeysExperts?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold">
+            Why Choose AutoKeysExperts in Nairobi?
+          </h2>
         </FadeUp>
 
-        <p className="max-w-2xl mx-auto">
+        <p className="max-w-2xl mx-auto text-gray-300">
           We are trusted professionals offering fast, affordable, and reliable
           auto locksmith and car tech services across Nairobi.
         </p>
 
-        <div className="grid md:grid-cols-3 gap-6 mt-10">
-          <div>✔ 24/7 Emergency Service</div>
-          <div>✔ Fast Response Time</div>
-          <div>✔ Affordable Pricing</div>
-          <div>✔ Professional Technicians</div>
-          <div>✔ Mobile On-Site Service</div>
-          <div>✔ All Car Models Supported</div>
+        <div className="grid md:grid-cols-3 gap-6 mt-10 max-w-5xl mx-auto">
+          {[
+            "24/7 Emergency Service",
+            "Fast Response Time",
+            "Affordable Pricing",
+            "Professional Technicians",
+            "Mobile On-Site Service",
+            "All Car Models Supported",
+          ].map((item, i) => (
+            <div
+              key={i}
+              className="bg-white/10 backdrop-blur p-6 rounded-2xl hover:bg-white/20 transition"
+            >
+              {item}
+            </div>
+          ))}
         </div>
       </section>
 
       {/* CTA */}
-      <section className="py-16 px-6 text-center bg-yellow-500 space-y-6">
-        <h2 className="text-3xl font-bold">
+      <section className="py-20 px-6 text-center bg-yellow-500 space-y-6">
+        <h2 className="text-3xl md:text-4xl font-bold">
           Need Auto Locksmith Services in Nairobi?
         </h2>
 
-        <p>Call us now for fast and reliable service anywhere in Nairobi.</p>
+        <p className="text-lg">
+          Call us now for fast and reliable service anywhere in Nairobi.
+        </p>
 
-        <a
-          href="tel:+254716884011"
-          className="bg-black text-white px-6 py-3 rounded-xl"
-        >
-          Call Now
-        </a>
+        <div className="flex justify-center gap-4 flex-wrap">
+          <a
+            href="tel:+254716884011"
+            className="bg-black text-white px-8 py-3 rounded-xl font-semibold shadow-lg"
+          >
+            📞 Call Now
+          </a>
+
+          <a
+            href="https://wa.me/254716884011"
+            target="_blank"
+            className="bg-green-500 px-8 py-3 rounded-xl font-semibold shadow-lg"
+          >
+            💬 WhatsApp
+          </a>
+        </div>
       </section>
     </main>
-  );
-}
-interface ServiceCardAnimatedProps {
-  img: string;
-  title: string;
-  desc: string;
-}
-
-/* REUSABLE CARD */
-function ServiceCardAnimated({ img, title, desc }: ServiceCardAnimatedProps) {
-  return (
-    <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
-      <Image
-        src={img}
-        alt={title.toLowerCase()}
-        width={600}
-        height={400}
-        className="w-full h-[250px] object-cover"
-      />
-      <div className="p-6">
-        <h3 className="text-xl font-semibold mb-3">{title}</h3>
-        <p>{desc}</p>
-      </div>
-    </div>
   );
 }
