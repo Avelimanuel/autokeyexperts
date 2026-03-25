@@ -5,148 +5,183 @@ export const metadata = {
     "Car Key Replacement Nairobi | Lost Car Key Replacement | AutoKeysExperts",
   description:
     "Need car key replacement in Nairobi? AutoKeysExperts provides fast lost car key replacement, key programming, and duplication services. 24/7 mobile auto locksmith near you.",
-  keywords: [
-    "car key replacement Nairobi",
-    "lost car key Nairobi",
-    "auto locksmith Nairobi",
-    "duplicate car key Nairobi",
-    "car key programming Nairobi",
-  ],
 };
 
 export default function CarKeyReplacementPage() {
   return (
     <main className="flex flex-col">
       {/* HERO */}
-      {/* HERO */}
-      <section className="relative pt-16 md:pt-0 h-[70vh] flex items-center justify-center text-white">
+      <section className="relative h-[75vh] flex items-center">
         <Image
-          src="/images/"
+          src="/images/cx5lostkey.jpeg"
           alt="car key replacement Nairobi"
           fill
+          priority
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-black/60" />
 
-        <div className="relative z-10 text-center px-6">
-          <h1 className="text-3xl md:text-5xl font-bold mb-6">
-            Car Key Replacement in Nairobi – Fast & Reliable Service
-          </h1>
+        <div className="absolute inset-0 bg-black/70" />
 
-          <p className="text-lg max-w-2xl mx-auto mb-6">
-            Lost your car keys? We provide professional car key replacement, key
-            cutting, and programming services anywhere in Nairobi. Our mobile
-            auto locksmith comes to your location 24/7.
+        <div className="relative z-10 max-w-5xl px-6 md:px-20 text-white">
+          <p className="text-yellow-400 font-medium mb-3">
+            Auto Locksmith Nairobi • 24/7 Mobile Service
           </p>
 
-          <a
-            href="tel:+254716884011"
-            className="bg-yellow-500 text-black px-6 py-3 rounded-xl font-semibold"
-          >
-            Call Now: 0716 884 011
-          </a>
+          <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-6">
+            Lost Your Car Key? We Replace It Fast in Nairobi
+          </h1>
+
+          <p className="text-lg text-gray-200 max-w-2xl mb-8">
+            We provide on-site car key replacement, programming, and
+            duplication. Our mobile locksmith reaches you anywhere in Nairobi —
+            fast.
+          </p>
+
+          <div className="flex flex-wrap gap-4">
+            <a
+              href="tel:+254716884011"
+              className="bg-yellow-500 text-black px-6 py-3 rounded-xl font-semibold hover:bg-yellow-400 transition"
+            >
+              📞 Call 0716 884 011
+            </a>
+
+            <a
+              href="https://wa.me/254716884011"
+              target="_blank"
+              className="bg-green-500 px-6 py-3 rounded-xl font-semibold hover:bg-green-400 transition"
+            >
+              💬 WhatsApp
+            </a>
+          </div>
         </div>
       </section>
 
       {/* INTRO */}
-      <section className="py-16 px-6 md:px-20 space-y-6">
-        <h2 className="text-3xl font-bold">
-          Professional Car Key Replacement Services in Nairobi
+      <section className="py-20 px-6 md:px-20 max-w-5xl mx-auto space-y-6">
+        <h2 className="text-3xl md:text-4xl font-bold">
+          Car Key Replacement Services in Nairobi
         </h2>
 
-        <p>
-          At AutoKeysExperts, we specialize in car key replacement services for
-          all vehicle models in Nairobi. Whether you have lost your only car
-          key, broken your key, or need a spare, our experienced technicians
-          provide fast and efficient solutions. We use advanced tools to cut and
-          program new keys on-site, saving you the cost and inconvenience of
-          towing your vehicle.
+        <p className="text-lg text-gray-700">
+          At AutoKeysExperts, we specialize in replacing lost or damaged car
+          keys for all vehicle models. Whether you’ve lost your only key or need
+          a spare, we provide fast and reliable solutions using advanced key
+          cutting and programming tools.
         </p>
 
-        <p>
-          Our mobile auto locksmith service ensures that we reach you wherever
-          you are in Nairobi, including Westlands, Kilimani, Embakasi, Thika
-          Road, and surrounding areas. We are available 24/7 for emergency
-          situations.
+        <p className="text-gray-600">
+          Our mobile auto locksmith service operates across Nairobi including
+          Westlands, Kilimani, Embakasi, and Thika Road. We come to your
+          location and get you back on the road quickly.
         </p>
       </section>
 
       {/* IMAGE + DETAILS */}
-      <section className="py-10 px-6 md:px-20 grid md:grid-cols-2 gap-10 items-center">
+      <section className="py-16 px-6 md:px-20 grid md:grid-cols-2 gap-12 items-center bg-gray-50">
         <Image
           src="/images/cx5lostkey.jpeg"
-          alt="car key cutting Nairobi"
+          alt="lost car key replacement Nairobi"
           width={600}
           height={400}
-          className="rounded-2xl object-cover"
+          className="rounded-2xl shadow-md object-cover w-full"
         />
 
-        <div className="space-y-4">
-          <h2 className="text-2xl font-semibold">
-            Lost All Car Keys? We’ve Got You Covered
+        <div className="space-y-5">
+          <h2 className="text-2xl md:text-3xl font-semibold">
+            Lost All Car Keys? No Problem
           </h2>
 
-          <p>
-            Losing all your car keys can be stressful, but we make the process
-            easy. Our team can create a brand new key from scratch and program
-            it to your car’s immobilizer system. No need to visit the dealership
-            — we bring everything to you.
+          <p className="text-gray-700">
+            If you’ve lost all your car keys, we can create a new one from
+            scratch and program it to your car’s immobilizer system.
           </p>
 
-          <p>
-            We handle transponder keys, remote keys, and smart keys for most car
-            brands.
+          <p className="text-gray-600">
+            No need to tow your car to the dealership. We come fully equipped
+            and handle everything on-site.
           </p>
+
+          <ul className="space-y-2 text-gray-700">
+            <li>✔ Transponder keys</li>
+            <li>✔ Remote keys</li>
+            <li>✔ Smart key systems</li>
+          </ul>
         </div>
       </section>
 
-      {/* SERVICES LIST */}
-      <section className="py-16 px-6 md:px-20 bg-gray-100 space-y-6">
-        <h2 className="text-3xl font-bold text-center">
-          What Our Car Key Replacement Service Includes
-        </h2>
-
-        <ul className="space-y-3 max-w-2xl mx-auto">
-          <li>✔ Lost car key replacement</li>
-          <li>✔ Spare key duplication</li>
-          <li>✔ Car key programming</li>
-          <li>✔ Broken key extraction</li>
-          <li>✔ Key shell replacement</li>
-        </ul>
-      </section>
-
-      {/* WHY US */}
-      <section className="py-16 px-6 md:px-20 text-center space-y-6">
-        <h2 className="text-3xl font-bold">
-          Why Choose Us for Car Key Replacement in Nairobi?
+      {/* SERVICES */}
+      <section className="py-20 px-6 md:px-20 space-y-10">
+        <h2 className="text-3xl md:text-4xl font-bold text-center">
+          Our Car Key Services
         </h2>
 
         <div className="grid md:grid-cols-3 gap-6">
-          <div>✔ 24/7 Emergency Service</div>
-          <div>✔ Fast Response Time</div>
-          <div>✔ Affordable Pricing</div>
-          <div>✔ Mobile On-Site Service</div>
-          <div>✔ All Car Models Supported</div>
-          <div>✔ Professional Equipment</div>
+          {[
+            "Lost car key replacement",
+            "Spare key duplication",
+            "Car key programming",
+            "Broken key extraction",
+            "Key shell replacement",
+            "Remote repair",
+          ].map((service, i) => (
+            <div
+              key={i}
+              className="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition"
+            >
+              <p className="font-medium text-gray-800">✔ {service}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* WHY US */}
+      <section className="py-20 px-6 md:px-20 bg-gray-50 text-center space-y-10">
+        <h2 className="text-3xl md:text-4xl font-bold">
+          Why Choose AutoKeysExperts?
+        </h2>
+
+        <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          {[
+            "24/7 Emergency Service",
+            "Fast Response Time",
+            "Affordable Pricing",
+            "Mobile On-Site Service",
+            "All Car Models Supported",
+            "Professional Equipment",
+          ].map((item, i) => (
+            <div key={i} className="bg-white p-6 rounded-2xl shadow-sm">
+              {item}
+            </div>
+          ))}
         </div>
       </section>
 
       {/* CTA */}
-      <section className="py-16 px-6 text-center bg-yellow-500 space-y-6">
-        <h2 className="text-3xl font-bold">
+      <section className="py-20 px-6 text-center bg-black text-white space-y-6">
+        <h2 className="text-3xl md:text-4xl font-bold">
           Need Car Key Replacement in Nairobi?
         </h2>
 
-        <p>
-          Call AutoKeysExperts now for fast, reliable, and affordable service.
+        <p className="text-gray-300">
+          Call now and get fast mobile locksmith service at your location.
         </p>
 
-        <a
-          href="tel:+254716884011"
-          className="bg-black text-white px-6 py-3 rounded-xl"
-        >
-          Call Now
-        </a>
+        <div className="flex justify-center gap-4 flex-wrap">
+          <a
+            href="tel:+254716884011"
+            className="bg-yellow-500 text-black px-6 py-3 rounded-xl font-semibold"
+          >
+            📞 Call Now
+          </a>
+
+          <a
+            href="https://wa.me/254716884011"
+            target="_blank"
+            className="bg-green-500 px-6 py-3 rounded-xl font-semibold"
+          >
+            💬 WhatsApp
+          </a>
+        </div>
       </section>
 
       {/* SCHEMA */}
