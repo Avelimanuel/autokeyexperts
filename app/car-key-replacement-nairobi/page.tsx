@@ -13,7 +13,7 @@ export default function CarKeyReplacementPage() {
       {/* HERO */}
       <section className="relative h-[75vh] flex items-center">
         <Image
-          src="/images/cx5lostkey.jpeg"
+          src="/images/mercedeskey.jpeg"
           alt="car key replacement Nairobi"
           fill
           priority
