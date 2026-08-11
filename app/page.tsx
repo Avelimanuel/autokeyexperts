@@ -2,6 +2,7 @@ import Image from "next/image";
 import HeroAnimated from "./components/animations/HeroAnimated";
 import FadeUp from "./components/animations/FadeUp";
 import ServiceCardAnimated from "./components/animations/ServiceCardanimated";
+import CallButton from "./components/Callbutton";
 
 export const metadata = {
   title:
@@ -57,12 +58,9 @@ export default function HomePage() {
 
           {/* CTA */}
           <div className="flex flex-wrap gap-4">
-            <a
-              href="tel:+254716884011"
-              className="bg-yellow-500 text-black px-6 py-3 rounded-xl font-semibold hover:bg-yellow-400 transition shadow-lg"
-            >
+            <CallButton className="bg-yellow-500 text-black px-6 py-3 rounded-xl font-semibold hover:bg-yellow-400 transition shadow-lg">
               📞 Call - 0716 884 011
-            </a>
+            </CallButton>
 
             <a
               href="https://wa.me/254716884011"
@@ -213,12 +211,9 @@ export default function HomePage() {
         </p>
 
         <div className="flex justify-center gap-4 flex-wrap">
-          <a
-            href="tel:+254716884011"
-            className="bg-black text-white px-8 py-3 rounded-xl font-semibold shadow-lg"
-          >
-            📞 Call Now
-          </a>
+          <CallButton className="bg-yellow-500 text-black px-6 py-3 rounded-xl font-semibold hover:bg-yellow-400 transition shadow-lg">
+            📞 Call - 0716 884 011
+          </CallButton>
 
           <a
             href="https://wa.me/254716884011"
