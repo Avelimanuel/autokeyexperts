@@ -8,7 +8,7 @@ export const metadata = {
 
 export default function Page() {
   return (
-    <main className="flex flex-col">
+    <main className="flex flex-col mt-5">
       {/* HERO */}
       <section className="relative pt-16 md:pt-0 h-[70vh] flex items-center justify-center text-white">
         <Image
