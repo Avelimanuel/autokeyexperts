@@ -3,6 +3,7 @@ import HeroAnimated from "./components/animations/HeroAnimated";
 import FadeUp from "./components/animations/FadeUp";
 import ServiceCardAnimated from "./components/animations/ServiceCardanimated";
 import CallButton from "./components/Callbutton";
+import Link from "next/link";
 
 export const metadata = {
   title:
@@ -88,35 +89,43 @@ export default function HomePage() {
         </FadeUp>
 
         <div className="grid md:grid-cols-2 gap-10 max-w-6xl mx-auto">
-          <ServiceCardAnimated
-            img="/images/landcruiserlostkey.jpeg"
-            title="Lost Car Key Replacement"
-            desc="Lost all your car keys in Nairobi? We provide complete car key replacement for all vehicle models. Our mobile auto locksmith comes to your location, cuts a new key, and programs it to your car’s immobilizer system on-site. No towing required. Fast, reliable, and available 24/7 across Nairobi."
-          />
+          <Link href={"/car-key-replacement-nairobi"}>
+            <ServiceCardAnimated
+              img="/images/landcruiserlostkey.jpeg"
+              title="Lost Car Key Replacement"
+              desc="Lost all your car keys in Nairobi? We provide complete car key replacement for all vehicle models. Our mobile auto locksmith comes to your location, cuts a new key, and programs it to your car’s immobilizer system on-site. No towing required. Fast, reliable, and available 24/7 across Nairobi."
+            />
+          </Link>
 
-          <ServiceCardAnimated
-            img="/images/corollacross.jpeg"
-            title="Spare Key Duplication"
-            desc="Avoid getting stranded by having a spare car key made in advance. We duplicate and program all types of car keys including transponder keys, remote keys, and smart keys. Our service is quick, affordable, and ensures your spare key works perfectly with your vehicle."
-          />
+          <Link href={"/spare-car-key-nairobi"}>
+            <ServiceCardAnimated
+              img="/images/corollacross.jpeg"
+              title="Spare Key Duplication"
+              desc="Avoid getting stranded by having a spare car key made in advance. We duplicate and program all types of car keys including transponder keys, remote keys, and smart keys. Our service is quick, affordable, and ensures your spare key works perfectly with your vehicle."
+            />
+          </Link>
+          <Link href={"/car-unlocking-nairobi"}>
+            <ServiceCardAnimated
+              img="/images/lockedoutofcar.webp"
+              title="Car Door Unlocking"
+              desc="Locked your keys inside the car? Our emergency car unlocking service in Nairobi is fast and damage-free. We use professional tools to safely unlock your vehicle without damaging the locks or doors. Available 24/7 for all car models."
+            />
+          </Link>
+          <Link href={"/spare-car-key-nairobi"}>
+            <ServiceCardAnimated
+              img="/images/mazdacx5spare.jpeg"
+              title="Car Key Programming"
+              desc="We specialize in car key programming for a wide range of vehicles. Whether you need a new key programmed or an existing key reprogrammed, we use advanced diagnostic tools to ensure proper synchronization with your car’s security system."
+            />
+          </Link>
 
-          <ServiceCardAnimated
-            img="/images/lockedoutofcar.webp"
-            title="Car Door Unlocking"
-            desc="Locked your keys inside the car? Our emergency car unlocking service in Nairobi is fast and damage-free. We use professional tools to safely unlock your vehicle without damaging the locks or doors. Available 24/7 for all car models."
-          />
-
-          <ServiceCardAnimated
-            img="/images/mazdacx5spare.jpeg"
-            title="Car Key Programming"
-            desc="We specialize in car key programming for a wide range of vehicles. Whether you need a new key programmed or an existing key reprogrammed, we use advanced diagnostic tools to ensure proper synchronization with your car’s security system."
-          />
-
-          <ServiceCardAnimated
-            img="/images/gpstracking.jpeg"
-            title="GPS Tracking Installation"
-            desc="Secure your vehicle with professional GPS tracking installation services in Nairobi. Monitor your car’s location in real-time, prevent theft, and improve security."
-          />
+          <Link href={"/car-tracker-installation-nairobi"}>
+            <ServiceCardAnimated
+              img="/images/gpstracking.jpeg"
+              title="GPS Tracking Installation"
+              desc="Secure your vehicle with professional GPS tracking installation services in Nairobi. Monitor your car’s location in real-time, prevent theft, and improve security."
+            />
+          </Link>
 
           <ServiceCardAnimated
             img="/images/remoterepair.webp"
@@ -125,16 +134,17 @@ export default function HomePage() {
           />
 
           <ServiceCardAnimated
-            img="/images/alarm.jpg"
+            img="/images/caralarm.jpeg"
             title="Car Alarm Installation"
             desc="Enhance your car’s security with professional car alarm installation in Nairobi. We install advanced alarm systems with features like remote control, immobilizers, and siren alerts to protect your vehicle from theft."
           />
-
-          <ServiceCardAnimated
-            img="/images/dashcam.jpeg"
-            title="Dashboard Camera Installation"
-            desc="Install a high-quality dashboard camera for security and driving evidence. We provide professional dashcam installation in Nairobi with clean wiring and proper positioning to ensure clear recording and reliable performance."
-          />
+          <Link href={"/dash-board-camera"}>
+            <ServiceCardAnimated
+              img="/images/dashboardcamera.jpeg"
+              title="Dashboard Camera Installation"
+              desc="Install a high-quality dashboard camera for security and driving evidence. We provide professional dashcam installation in Nairobi with clean wiring and proper positioning to ensure clear recording and reliable performance."
+            />
+          </Link>
 
           <ServiceCardAnimated
             img="/images/airbagmodulereset.jpeg"
