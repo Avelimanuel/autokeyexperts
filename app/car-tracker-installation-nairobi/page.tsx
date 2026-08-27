@@ -12,7 +12,7 @@ export default function Page() {
     <main className="min-h-screen bg-slate-50">
       {/* HERO */}
       <section className="w-full bg-slate-950 text-white">
-        <div className="mx-auto flex min-h-[480px] w-full max-w-7xl items-center px-5 py-16 sm:px-8 lg:px-12">
+        <div className="mx-auto flex min-h-[480px] w-full max-w-7xl items-center px-5 pt-52 pb-16 sm:min-h-[520px] sm:px-8 sm:pt-48 sm:pb-16 md:min-h-[600px] md:px-10 md:pt-28 md:pb-16 lg:min-h-[480px] lg:px-12 lg:py-16">
           <div className="w-full max-w-4xl">
             <div className="mb-5 inline-flex rounded-full border border-blue-400/30 bg-blue-500/10 px-4 py-2">
               <span className="text-sm font-semibold text-blue-400">
@@ -36,21 +36,21 @@ export default function Page() {
               Our mobile team provides professional GPS tracker installation at
               your location for all types of vehicles.
             </p>
- {/* CTA */}
-          <div className="flex flex-wrap gap-4">
-            <CallButton className="bg-yellow-500 text-black px-6 py-3 rounded-xl font-semibold hover:bg-yellow-400 transition shadow-lg">
-              📞 Call - 0716 884 011
-            </CallButton>
 
-            <a
-              href="https://wa.me/254716884011"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-green-500 text-white px-6 py-3 rounded-xl font-semibold hover:bg-green-400 transition shadow-lg"
-            >
-              💬 WhatsApp
-            </a>
-          </div>
+            <div className="mt-8 flex flex-wrap gap-4">
+              <CallButton className="bg-yellow-500 px-6 py-3 font-semibold text-black shadow-lg transition hover:bg-yellow-400">
+                📞 Call - 0716 884 011
+              </CallButton>
+
+              <a
+                href="https://wa.me/254716884011"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-xl bg-green-500 px-6 py-3 font-semibold text-white shadow-lg transition hover:bg-green-400"
+              >
+                💬 WhatsApp
+              </a>
+            </div>
           </div>
         </div>
       </section>
