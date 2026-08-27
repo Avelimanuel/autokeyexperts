@@ -119,8 +119,7 @@ export default function Page() {
 
               <p>
                 The tracker can also be combined with other vehicle security
-                solutions such as alarm installation and broken key shell
-                replacement.
+                solutions such as alarm installation and dashboard camera.
               </p>
             </div>
           </div>
