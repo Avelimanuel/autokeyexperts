@@ -76,7 +76,7 @@ export default function Page() {
       {/* IMAGE + DETAILS */}
       <section className="px-6 md:px-20 grid md:grid-cols-2 gap-10 items-center">
         <Image
-          src="/images/car-alarm-installation.jpg"
+          src="/images/caralarm.jpeg"
           alt="car alarm installation Nairobi"
           width={600}
           height={400}
