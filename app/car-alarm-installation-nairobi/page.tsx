@@ -10,9 +10,9 @@ export default function Page() {
   return (
     <main className="flex w-full flex-col overflow-x-hidden">
       {/* HERO */}
-      <section className="relative flex min-h-[500px] w-full items-center justify-center overflow-hidden px-5 py-20 text-white sm:min-h-[550px] sm:px-6 md:min-h-[600px] md:px-10 lg:min-h-[70vh] lg:px-20">
+      <section className="relative flex min-h-[500px] w-full items-center justify-center overflow-hidden px-5 pt-48 pb-20 text-white sm:min-h-[550px] sm:px-6 sm:pt-44 md:min-h-[600px] md:px-10 md:pt-20 lg:min-h-[70vh] lg:px-20 lg:pt-20">
         <Image
-          src="/images/car-alarm-hero.jpg"
+          src="/images/caralarm.jpeg"
           alt="car alarm installation Nairobi"
           fill
           priority
