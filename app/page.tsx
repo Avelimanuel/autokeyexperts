@@ -133,11 +133,13 @@ export default function HomePage() {
             desc="Is your car remote not working properly? We diagnose and repair remote key issues including faulty buttons, weak signals, and internal damage. Our technicians restore full functionality or replace the remote if needed."
           />
 
-          <ServiceCardAnimated
-            img="/images/caralarm.jpeg"
-            title="Car Alarm Installation"
-            desc="Enhance your car’s security with professional car alarm installation in Nairobi. We install advanced alarm systems with features like remote control, immobilizers, and siren alerts to protect your vehicle from theft."
-          />
+          <Link href={"/car-alarm-installation-nairobi"}>
+            <ServiceCardAnimated
+              img="/images/caralarm.jpeg"
+              title="Car Alarm Installation"
+              desc="Enhance your car’s security with professional car alarm installation in Nairobi. We install advanced alarm systems with features like remote control, immobilizers, and siren alerts to protect your vehicle from theft."
+            />
+          </Link>
           <Link href={"/dash-board-camera"}>
             <ServiceCardAnimated
               img="/images/dashboardcamera.jpeg"
