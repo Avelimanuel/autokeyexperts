@@ -19,7 +19,7 @@ export default function Page() {
         />
         <div className="absolute inset-0 bg-black/60" />
 
-        <div className="relative z-10 text-center px-6">
+        <div className="relative z-10 text-center px-12">
           <h1 className="text-3xl md:text-5xl font-bold mb-6">
             Car Alarm Installation in Nairobi – Protect Your Vehicle
           </h1>
