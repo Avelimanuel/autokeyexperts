@@ -201,7 +201,7 @@ export default function Page() {
               href="tel:0716884011"
               className="inline-flex w-full items-center justify-center rounded-lg bg-white px-8 py-3.5 font-bold text-blue-700 shadow-sm transition hover:bg-slate-100 sm:w-auto"
             >
-              Call Us Today
+              Call: 0716 884 011
             </a>
           </div>
         </div>
