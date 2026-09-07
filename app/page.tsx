@@ -56,7 +56,7 @@ export default function HomePage() {
 
                 <p className="text-base sm:text-lg md:text-xl text-gray-200 mb-8 max-w-2xl leading-relaxed">
                   We provide professional lost car key replacement, spare key
-                  programming, car door unlocking, ECU repair, and vehicle
+                  programming, car door unlocking,Dashboard camera installation,Car tracking, and vehicle
                   security solutions anywhere in Nairobi.
                 </p>
               </div>
