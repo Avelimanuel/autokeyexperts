@@ -282,12 +282,12 @@ export default function HomePage() {
             </CallButton>
 
             <a
-              href="[https://wa.me/254716884011](https://wa.me/254716884011)"
+              href="https://wa.me/254716884011"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-green-500 text-white px-8 py-3.5 rounded-xl font-bold hover:bg-green-400 transition-all duration-300 shadow-xl hover:-translate-y-1"
+              className="bg-green-500 text-white px-7 py-3.5 rounded-xl font-bold hover:bg-green-400 transition-all duration-300 shadow-xl hover:shadow-green-500/20 hover:-translate-y-1 text-center"
             >
-              💬 WhatsApp
+              WhatsApp Us
             </a>
           </div>
         </div>
