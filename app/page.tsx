@@ -72,7 +72,7 @@ export default function HomePage() {
                 href="https://wa.me/254716884011"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full max-w-xs rounded-xl bg-green-500 px-6 py-3 font-semibold text-white transition hover:bg-green-400 sm:w-auto"
+                className="bg-green-500 text-white px-7 py-3.5 rounded-xl font-bold hover:bg-green-400 transition-all duration-300 shadow-xl hover:shadow-green-500/20 hover:-translate-y-1 text-center"
               >
                 WhatsApp Us
               </a>
