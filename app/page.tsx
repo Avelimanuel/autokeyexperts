@@ -56,8 +56,9 @@ export default function HomePage() {
 
                 <p className="text-base sm:text-lg md:text-xl text-gray-200 mb-8 max-w-2xl leading-relaxed">
                   We provide professional lost car key replacement, spare key
-                  programming, car door unlocking,Dashboard camera installation,Car tracking, and vehicle
-                  security solutions anywhere in Nairobi.
+                  programming, car door unlocking,Dashboard camera
+                  installation,Car tracking, and vehicle security solutions
+                  anywhere in Nairobi.
                 </p>
               </div>
             </HeroAnimated>
@@ -68,21 +69,19 @@ export default function HomePage() {
               </CallButton>
 
               <a
-                href="(https://wa.me/254716884011)"
+                href="https://wa.me/254716884011"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-green-500 text-white px-7 py-3.5 rounded-xl font-bold hover:bg-green-400 transition-all duration-300 shadow-xl hover:shadow-green-500/20 hover:-translate-y-1 text-center"
+                className="w-full max-w-xs rounded-xl bg-green-500 px-6 py-3 font-semibold text-white transition hover:bg-green-400 sm:w-auto"
               >
-                💬 WhatsApp
+                WhatsApp Us
               </a>
             </div>
 
             <p className="mt-7 text-sm sm:text-base text-gray-300 font-medium">
               ✔ Fast Response
-              <span className="mx-2 text-gray-500">•</span>
-              ✔ Mobile Service
-              <span className="mx-2 text-gray-500">•</span>
-              ✔ All Car Models
+              <span className="mx-2 text-gray-500">•</span>✔ Mobile Service
+              <span className="mx-2 text-gray-500">•</span>✔ All Car Models
             </p>
           </div>
         </div>
