@@ -47,6 +47,10 @@ export default function Navbar() {
                 name: "Dashboard Camera",
                 href: "/dash-board-camera",
               },
+              {
+                name: "Work gallery",
+                href: "/work-gallery",
+              },
             ].map((link) => (
               <Link
                 key={link.name}
