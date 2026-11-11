@@ -14,53 +14,53 @@ const projects = [
     category: "Lost Key Replacement",
     description:
       "Successfully replaced a lost car key and provided the customer with a fully functional replacement, restoring convenient access to their vehicle.",
-    image: "/workgalleryimages/mazdacx5keyreplacement.jpg",
+    image: "/images/mazdacx5keyreplacement.jpg",
   },
   {
     title: "Mazda Cx8 spare Key Programming",
     category: "Key Programming",
 
-    image: "/workgalleryimages/mazdacx8spare.jpg",
+    image: "/images/mazdacx8spare.jpg",
   },
   {
     title: "2020 Toyota Rav4 spare key",
     category: "Key Duplication",
     description:
       "Programmed an additional spare car key, giving the vehicle owner a reliable backup and extra peace of mind.",
-    image: "/workgalleryimages/2020Rav4spare.jpg",
+    image: "/images/2020Rav4spare.jpg",
   },
   {
     title: "Honda Odyssey Spare Key Programming",
     category: "Key Programming",
     description:
       "Programmed a new spare key for a Honda Odyssey.",
-    image: "/workgalleryimages/hondaodyssyspare.jpg",
+    image: "/images/hondaodyssyspare.jpg",
   },
   {
     title: "GPS Tracker Installation",
     category: "Vehicle Tracking",
     description:
       "Installed a GPS vehicle tracking system, allowing the owner to monitor vehicle location, movement and other tracking information in real time.",
-    image: "/workgalleryimages/gpstracker.jpg",
+    image: "/images/gpstracker.jpg",
   },
   {
     title: "Toyota Harrier spare key",
     category: "Key Duplication",
     description:
       "Programmed an additional spare car key, giving the vehicle owner a reliable backup and extra peace of mind.",
-    image: "/workgalleryimages/harriersparekey.jpg",
+    image: "/images/harriersparekey.jpg",
   },
   {
     title: "Car Key Upgrade",
     category: "Key Upgrade",
     description:
       "Upgraded a traditional car key to a modern remote key, providing improved convenience and easier vehicle access.",
-    image: "/workgalleryimages/keyupgrade.jpg",
+    image: "/images/keyupgrade.jpg",
   },
   {
     title: "Honda Key upgrade",
     category: "Key Cutting",
-    image: "/workgalleryimages/hondakeyupgrade.jpg",
+    image: "/images/hondakeyupgrade.jpg",
   },
 ];
 
