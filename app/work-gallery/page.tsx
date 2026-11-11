@@ -59,7 +59,7 @@ const projects = [
   },
   {
     title: "Honda Key upgrade",
-    category: "Key Cutting",
+    category: "Key Upgrade",
     image: "/images/hondakeyupgrade.jpg",
   },
 ];
@@ -169,7 +169,7 @@ export default function Page() {
 
           <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Link
-              href="/contact"
+              href="/contact-page"
               className="inline-flex items-center justify-center rounded-lg border border-slate-600 px-7 py-3.5 font-semibold text-white transition hover:border-blue-500 hover:bg-blue-600"
             >
               Contact Us
